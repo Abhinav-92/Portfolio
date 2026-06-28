@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen bg-background text-foreground">
       Portfolio
     </main>
   );
