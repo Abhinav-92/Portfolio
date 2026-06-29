@@ -1,23 +1,24 @@
 import { cn } from "@/lib/utils";
 
-interface BadgeProps {
+interface GlassCardProps {
   children: React.ReactNode;
   className?: string;
 }
 
-export default function Badge({
+export function GlassCard({
   children,
   className,
-}: BadgeProps) {
+}: GlassCardProps) {
   return (
     <div
       className={cn(
-        "inline-flex items-center gap-2 rounded-full",
+        "rounded-3xl",
         "border border-white/10",
-        "bg-white/5",
-        "px-4 py-2",
-        "text-sm font-medium",
+        "bg-white/4",
         "backdrop-blur-xl",
+        "transition-all duration-300",
+        "hover:border-white/20",
+        "hover:bg-white/6",
         className
       )}
     >
